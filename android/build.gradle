@@ -21,7 +21,8 @@ def _targetSdkVersion   = rootProject.hasProperty('targetSdkVersion')  ? rootPro
 buildscript {
     repositories {
         google()
-        jcenter()
+        // jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.3'
@@ -48,7 +49,7 @@ android {
 repositories {
     mavenCentral()
     google()
-    jcenter()
+    // jcenter()
     maven {
         url "$rootDir/../node_modules/react-native/android"
         name 'React Native (local)'
